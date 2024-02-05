@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar Over Image</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: url("shop.jpeg") center/cover; /* Replace 'your-image.jpg' with the path to your image */
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        display: flex;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Adjust the alpha value for transparency */
+        overflow: hidden;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #ebcece;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .name {
+        font-size: xx-large;
+        font-style: italic;
+        float: left;
+        display: block;
+        color: #ebcece;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .navbar a:hover {
+        background-color: #5f5d5d;
+        color: black;
+      }
+      h3 {
+        position: absolute;
+        top: 45%;
+        left: 40%;
+        text-align: center;
+
+        color: #ebcece;
+        font-size: 30px;
+        font-style: italic;
+      }
+      footer {
+        background-color: black;
+        color: #ebcece;
+        margin-top: 7%;
+      }
+      .copy {
+        text-align: center;
+      }
+      p {
+        font-weight: bold;
+      }
+      .signup-container {
+        align-items: center;
+        justify-content: center;
+        margin-top: 120px;
+        margin-left: 500px;
+        margin-right: 100px;
+        margin-bottom: 100px;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 300px;
+      }
+
+      .signup-container h2 {
+        text-align: center;
+        color: #f7f3f3;
+      }
+
+      .signup-form {
+        display: flex;
+        flex-direction: column;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+      }
+
+      .form-group label {
+        margin-bottom: 5px;
+        color: #e5dfdf;
+      }
+
+      .form-group input {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      .form-group button {
+        background-color: #27ae60;
+        color: #fff;
+        padding: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        font-size: 16px;
+      }
+
+      .form-group button:hover {
+        background-color: #219652;
+      }
+
+      .error-message {
+        color: #e74c3c;
+        margin-top: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="name">Fritters.Co</div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+    </div>
+    <div class="signup-container">
+      <h2>Signup</h2>
+      <form class="signup-form" onsubmit="return validateForm()">
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Choose a username"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Choose a password"
+            required
+          />
+        </div>
+
+        <div class="form-group">
+          <button type="submit">Signup</button>
+          <a href="login.html">Login?</a>
+        </div>
+
+        <div id="error-message" class="error-message"></div>
+      </form>
+    </div>
+    <footer>
+      <p>Contact-1233443239,3243527345</p>
+      <p>Email-Fritters.Co123@gmail.com</p>
+      <p>Time- 9A.M -10A.M</p>
+      <p>Location-Fritters.Co, Kumarswamy Layout, Bangalore</p>
+      <div class="copy">&copy; 2023 Fritters.co | All Rights Reserved</div>
+    </footer>
+    <!-- Add your page content here -->
+    <script>
+      function validateForm() {
+        var username = document.getElementById("username").value;
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("password").value;
+        var errorMessage = document.getElementById("error-message");
+
+        // Basic validation, you can add more complex validation if needed
+        if (username === "" || email === "" || password === "") {
+          errorMessage.innerHTML = "Please fill in all fields.";
+          return false;
+        } else {
+          errorMessage.innerHTML = "";
+          // Here you can add logic to submit the form or perform other actions
+          return true;
+        }
+      }
+    </script>
+  </body>
+</html>

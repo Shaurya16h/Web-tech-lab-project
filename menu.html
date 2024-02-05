@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigation Bar Over Image</title>
+    <style>
+      body {
+       
+        margin: 0;
+        padding: 0;
+        background: url("shop.jpeg") center/cover; /* Replace 'your-image.jpg' with the path to your image */
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        display: flex;
+        background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        ); /* Adjust the alpha value for transparency */
+        overflow: hidden;
+      }
+
+      .navbar a {
+        float: left;
+        display: block;
+        color: #ebcece;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+
+      .name {
+        font-size: xx-large;
+        font-style: italic;
+        float: left;
+        display: block;
+        color: #ebcece;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      .navbar a:hover {
+        background-color: #5f5d5d;
+        color: black;
+      }
+     .ourmenu{
+      border-radius: 10px;
+   border-color: #ebcece;
+   border-style: groove;
+      
+      background-color: black;
+      color: #ebcece;
+      font-size:xx-large;
+      margin: 40px;
+      width: 150px;
+      height: 100px;
+      display: flex;
+      flex-direction: row;
+    }
+   
+  .one{
+      display: flex;
+      gap: 10px;
+      flex-direction: row;
+    
+    }
+    .two{
+      display: flex;
+      gap: 10px;
+      flex-direction: row;
+      margin-top: 20px;
+    }
+   
+    .menu{
+      
+      margin:20px ;
+    
+    }
+   .ourmenu1{
+    border-radius: 10px;
+   border-color: #ebcece;
+   border-style: groove;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    
+      background-color: black;
+      color: #ebcece;
+      font-size:large;
+   font-style: italic;
+      width: 100px;
+      height: 60px;
+   }
+   .ourmenu2{
+    border-radius: 10px;
+   border-color: #ebcece;
+   border-style: groove;
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+      background-color: black;
+      color: #ebcece;
+      font-size:large;
+    font-style: italic;
+      width: 100px;
+      height: 60px;
+   }
+   footer{
+    
+    background-color: black;
+    color: #ebcece;
+margin-top: 13%;
+
+   }
+   .copy{
+    text-align: center;
+   }
+   p{
+font-weight: bold;
+   }
+  .container{
+    display: flex;
+  }
+  .discount{
+    border-radius: 30px;
+    border-color: #ebcece;
+   border-style: groove;
+   color: #ebcece;
+    width: 300px;
+    height: 400px;
+    background-color: rgba(
+          0,
+          0,
+          0,
+          0.5
+        );;
+    margin: auto;
+    
+    margin-top: 50px;
+  }
+   .dis{
+
+
+margin-left: 30px;
+margin-right: 30px;
+
+margin-top: 80px;
+
+font-size: 40px;
+font-weight: bolder;
+  }
+  h2{
+    font-family: sans-serif;
+    font-size:40px;
+    color:#ebcece;
+   display: flex;
+    justify-content: center;
+ align-items: center;
+margin-left: 30px;
+margin-right: 30px;
+
+
+
+  }
+  .apply{
+   margin-bottom: 60px;
+   margin-left: 30px;
+   margin-right: 30px; 
+   background-color: black;
+   color: #ebcece;
+   border-radius: 10px;
+   border-color: #ebcece;
+   border-style: groove;
+  }
+    </style>
+
+</head>
+<body>
+
+
+</body>
+
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <div class="name">Fritters.Co</div>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="menu.html">Menu</a>
+      <a href="login.html">Login</a>
+      <a href="signup.html">Signup</a>
+    </div>
+    <div class="container">
+    <div class="menu">
+    <button class="ourmenu">Our Menu</button>
+    <div class="one">
+  <a href="fritters.html" class="ourmenu1"> Fritters</a>
+  <a href="pizza.html" class="ourmenu1">Pizza</a>
+  <a href="noodles.html"class="ourmenu1">Noodles</a> 
+    <a href="dessert.html" class="ourmenu1">Desserts</a>
+    
+  </div>
+  <div class="two">
+    <a href="beverages.html" class="ourmenu2">Beverages</a>
+    <a href="burger.html" class="ourmenu2">Burger</a>
+    <a href="milshakes.html" class="ourmenu2">Milkshakes</a>
+
+    <a href ="pasta.html"class="ourmenu2">Pasta</a>
+  </div>
+ 
+  </div>
+  <div class="discount">
+   <h4 class="dis" >Best Offer Of The Day!<br>Upto 40% Off<button class="apply">Apply Coupon And Avail Now</button></h4>
+   
+  </div>
+</div>
+  <footer>
+    
+      <p>Contact-1233443239,3243527345</p>
+    <p>Email-Fritters.Co123@gmail.com</p>
+    <p>Time- 9A.M -10A.M</p>
+    <P>Location-Fritters.Co, Kumarswamy Layout, Bangalore</P>
+    <div class="copy">
+   
+   
+     &copy; 2023 Fritters.co | All Rights Reserved</div>
+  </footer>
+  </body>
+</html>
